@@ -1,0 +1,40 @@
+@use '../../../styles/variables';
+
+.mainItemContainer{
+    width: 40vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;      
+    margin: .90%;
+    font-family: 'Poppins'
+}
+
+.titleContainer{
+    width: 40vw;
+    height: 10vh;
+    background-color: variables.$pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: 'Plus Jakarta Sans'
+  
+}
+ul{
+    list-style-type: none;
+    color: variables.$dark ;
+    float: left;
+}
+
+
+#lastList{
+    list-style-type: circle;
+    font-style: italic;
+}
+#listItem :first-child{
+    font-weight: bold;
+
+}
+.lastChild{
+    color: variables.$gray;
+}

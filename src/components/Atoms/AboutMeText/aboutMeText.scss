@@ -1,0 +1,27 @@
+@use '../../../styles/variables';
+
+section{
+    width: 20vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    text-align: justify;
+    color: variables.$dark;
+    font-size: 14px;
+ 
+    
+}
+h3{
+   margin: 0;
+    font-family: 'Plus Jakarta Sans';
+    
+}
+p{
+    height:min-content;
+    margin: 0;
+    font-family: 'Poppins';
+    
+}
+
+

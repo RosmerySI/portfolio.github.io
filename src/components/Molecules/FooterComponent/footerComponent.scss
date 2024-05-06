@@ -1,0 +1,13 @@
+@use '../../../styles/variables';
+
+footer{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 100vw;
+    height: 7vh;
+    background-color: variables.$dark;  
+
+}

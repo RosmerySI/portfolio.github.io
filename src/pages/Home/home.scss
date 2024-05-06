@@ -1,0 +1,34 @@
+@use '../../../src/styles/variables';
+
+header {
+    width: 100vw;
+    height: 8vh;
+    background-color: variables.$dark;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Plus Jakarta Sans';
+ 
+}
+h1{
+    padding-left: 2%;
+    font-family: 'Plus Jakarta Sans'
+}
+
+.pageContainer{
+    display: flex;
+    flex-direction: row;
+}
+.main{
+    width:70vw;
+    height:84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+    
+}
+
+

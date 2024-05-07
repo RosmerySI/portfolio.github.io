@@ -14,7 +14,7 @@ export const FooterComponent = () => {
     icon={gmail}
     contact={'rosmery.salazar0507@gmail.com'}/>
     <SocialMedia
-    url={'https://wa.me}'} 
+    url={'https://wa.me/+5213326492584'} 
     icon={whatsapp}
     contact={'+523326492584'}/>  
     <SocialMedia

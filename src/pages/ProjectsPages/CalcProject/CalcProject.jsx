@@ -2,6 +2,6 @@ import React from 'react'
 
 export const CalcProject = () => {
   return (
-    <div>Calc</div>
+    <div className='pagesMain'>Calc</div>
   )
 }

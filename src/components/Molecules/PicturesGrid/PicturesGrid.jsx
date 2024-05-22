@@ -1,5 +1,5 @@
-import React from 'react'
-import '../../../pages/ProjectsPages/projectsPages.scss'
+import React from 'react';
+import '../../../pages/pagesStyle.scss';
 
 
 export const PicturesGrid = ({images}) => {

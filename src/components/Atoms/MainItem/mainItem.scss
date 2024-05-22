@@ -28,13 +28,21 @@ ul{
 
 
 #lastList{
+  
     list-style-type: circle;
     font-style: italic;
+    
+    a{
+       
+        color: variables.$dark ;
+        text-decoration: underline;
+    }
 }
-#listItem :first-child{
+#listItem :first-child, :nth-child(3){
     font-weight: bold;
 
 }
+
 .lastChild{
     color: variables.$gray;
 }

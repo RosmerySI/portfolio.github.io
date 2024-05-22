@@ -2,6 +2,6 @@ import React from 'react'
 
 export const ClockProject = () => {
   return (
-    <div>ClockProject</div>
+    <div className='pagesMain'>ClockProject</div>
   )
 }

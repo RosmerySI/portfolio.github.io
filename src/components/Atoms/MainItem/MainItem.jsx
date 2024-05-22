@@ -1,7 +1,7 @@
 import React from 'react';
 import './mainItem.scss';
 
-export const MainItem = ({ title, list }) => {
+export const MainItem = ({ title, list}) => {
 
   return (
     <section className='mainItemContainer'>
@@ -11,10 +11,14 @@ export const MainItem = ({ title, list }) => {
       <ul id={title === 'Licenses and certifications' ? 'lastList' : 'listItem'}>
         {
           list.map((item, index) => {
-            return <li
-              className={item === 'Zapopan, Jalisco, México' ?'lastChild':undefined}
+            return <li            
+              className={item.text === 'Zapopan, Jalisco, México' ?'lastChild':undefined}
               key={index}>
-              {item}
+              { 
+              title === 'Licenses and certifications' ?
+              <a href={item.href} target='_blank'> {item.text}</a>:
+              (item)
+              }            
             </li>
           })
         }

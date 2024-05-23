@@ -28,7 +28,7 @@ export const ProjectPage = () => {
 
   return (
     <main className='pagesMain'>
-       <h2>{id==='mb'|| id==='l'?'Professional Projects':'Personal Project'}</h2>    
+       <h2>{id==='mb'|| id==='l'?'Professional Project':'Personal Project'}</h2>    
       <section ref={projectPageMainRef} className='projectPageMain'>    
         {
           images?.length !== 0 &&

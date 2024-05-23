@@ -10,7 +10,7 @@ export const FooterComponent = () => {
   return (
    <footer>
      <SocialMedia
-    url={'mailto:rosmery.salazar0507gmail.com'} 
+    url={'mailto:rosmery.salazar0507@gmail.com'} 
     icon={gmail}
     contact={'rosmery.salazar0507@gmail.com'}/>
     <SocialMedia

@@ -1,75 +1,45 @@
-import React, { useEffect, useState } from 'react'
-import gif from '../../assets/images/gifs/gifs.png'
-import calc1 from '../../assets/images/calc/calc1.png'
-import calc2 from '../../assets/images/calc/calc1.png'
-import clock1 from '../../assets/images/clock/clock1.png'
-import clock2 from '../../assets/images/clock/clock2.png'
+import React, { useEffect, useRef } from 'react';
+import { GettingImages } from './GettingImages';
+
 
 export const ProjectPage = () => {
 
   const urlParams = new URLSearchParams(window.location.search);
   const id = urlParams.get('id');
-  const [images, setImages] = useState([]);
 
-  const gettingImages = () => {
-    switch (id ) {
-      case 'gif':
-      setImages([
-        { src: gif }
-      ]);
-      break;
-      case 'calc':
-      setImages([
-        { src: calc1 },
-        { src: calc2 }
-      ]);
-      break;
-      case 'clock':
-      setImages([
-        { src: clock1 },
-        { src: clock2 }
-      ]);
-      break;
-      // case 'l':
-      // setImages([
-      //   { src: l }
-      // ]);
-      // break;
-      // case 'weather':
-      // setImages([
-      //   { src: clock }
-      // ]);
-      // break;
-      // case 'mb':
-      // setImages([
-      //   { src: mb }
-      // ]);
-      // break;
-      // default:
-      //   alert('Ha ocurrido un error');
-    }
-  }
+
+  const { images, gettingImages } = GettingImages(id)
+
   useEffect(() => {
     gettingImages()
   }, []);
-
+  const projectPageMainRef = useRef(null);
+  
+  useEffect(() => {
+    const projectPageMain = projectPageMainRef.current;
+    if (images.length >= 1 && images.length <= 4) {
+      projectPageMain.classList.add('fewItems');
+      projectPageMain.classList.remove('multiItems');
+    } else if (images.length > 4) {
+      projectPageMain.classList.add('multiItems');
+      projectPageMain.classList.remove('fewItems');
+    }
+  }, [images]);
 
   return (
     <main className='pagesMain'>
-      <h2 style={{margin:'0'}}>Projects</h2>
-      <ul style={{display:'flex', flexDirectio:'row',margin:'0'}} >
+       <h2>{id==='mb'|| id==='l'?'Professional Projects':'Personal Project'}</h2>    
+      <section ref={projectPageMainRef} className='projectPageMain'>    
         {
-          images.length !== 0 &&
-          images.map((item, index) => {
-            return <li key={index} style={{margin:'0'}}>
-              <figure style={{margin:'0'}}>
-                <img src={item.src} alt="imagen del proyecto"  width='60%' height='80%'/>
-                <figcaption></figcaption>
-              </figure>
-            </li>
+          images?.length !== 0 &&
+          images?.map((item, index) => {
+            return <figure key={index} className='gridItem' >              
+              <img src={item.src} alt="imagen del proyecto" width='100%' height='100%' />             
+            </figure>
+
           })
         }
-      </ul>
+      </section>
     </main>
   )
 }

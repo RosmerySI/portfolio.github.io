@@ -8,22 +8,33 @@ import gif from '../../../assets/images/gif.png'
 import home from '../../../assets/images/home.png'
 import './sideBar.scss'
 
-export const SideBar = ({menu}) => {
-  
+export const SideBar = ({ menu }) => {
+
+  const projects = [
+    { text: 'Home', href: '/home',src:home },
+    { text: 'L', href: '/projectpage/?id=l',src:l },
+    { text: 'MB', href: '/projectpage/?id=mb',src:mb },
+    { text: 'Clock', href: '/projectpage/?id=clock',src:clock },
+    { text: 'Weather', href: '/projectpage/?id=weather',src:weather },
+    { text: 'Calc', href: '/projectpage/?id=calc',src:calc},
+    { text: 'Gifs', href: '/projectpage/?id=gif',src:gif },
+
+  ]
+
   return (
-    <>    
-    <nav className={menu?'sideBarShow':'sideBarLess'}>
-      <h2>{menu?'Menu':undefined}</h2>
-      <ul className='projectList'>
-        <li><a href="/lproject"><img src={l} alt="ícono del proyecto" />{menu?'L':undefined}</a></li>
-        <li><a href="/mbproject"><img src={mb} alt="ícono del proyecto" />{menu? 'MB':undefined}</a></li>
-        <li><a href="/clockproject"><img src={clock} alt="ícono del proyecto" /> {menu? 'Clock':undefined}</a></li>
-        <li><a href="/weatherproject"><img src={weather} alt="ícono del proyecto" /> {menu? 'Weather':undefined}</a></li>
-        <li><a href="/calcproject"><img src={calc} alt="ícono del proyecto" /> {menu? 'Calc':undefined}</a></li>
-        <li><a href="/gifproject"><img src={gif} alt="ícono del proyecto" /> {menu? 'Gifs':undefined}</a></li>
-        <li><a href="/home"><img src={home} alt="ícono de home" /> {menu? ' Home':undefined}</a></li>
-      </ul>
-    </nav>
+    <>
+      <nav className={menu ? 'sideBarShow' : 'sideBarLess'}>
+        <h2>{menu ? 'Menu' : undefined}</h2>
+        <ul className='projectList'>
+          {
+            projects.map((item, index) => {
+              return <li key={index}>
+                <a href={item.href}><img src={item.src} alt="ícono del proyecto" />{menu ? item.text : undefined}</a>
+              </li>
+            })
+          }          
+        </ul>
+      </nav>
     </>
   )
 }

@@ -1,13 +1,59 @@
 @use '../../../styles/variables';
+@import '../../../styles/mixins.scss';
 
-footer{
+
+footer {
     position: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: space-around;
     align-items: center;
     width: 100vw;
     height: 7vh;
-    background-color: variables.$dark;  
+    background-color: variables.$dark;
+
+    @include sm {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 7vh;
+        background-color: variables.$dark;
+    }
+
+    @include md {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 7vh;
+        background-color: variables.$dark;
+    }
+
+    @include lg {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        width: 100vw;
+        height: 7vh;
+        background-color: variables.$dark;
+    }
+
+    @include xl {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        width: 100vw;
+        height: 7vh;
+        background-color: variables.$dark;
+    }
 
 }

@@ -1,21 +1,67 @@
-.socialMedia{
+@import '../../../styles/mixins.scss';
+
+.socialMedia {
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: white ;
-}
-.socialMediaText{
-    width:max-content;
-    text-decoration: none;
-    color: white ;
-    font-weight: bold;
-    font-size: 16px;
-    font-family: 'Poppins';
-    margin-left:5px ;
-    margin-right:10px ;
+    color: white;
+    
 }
 
-a{
+.socialMediaText {
+    display: none;
+    
+    @include sm {
+        width: max-content;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 'Poppins';
+        margin-left: 5px;
+        margin-right: 10px;
+        display: none;
+    }
+
+    @include md {
+        width: max-content;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 'Poppins';
+        margin-left: 5px;
+        margin-right: 10px;
+        display: none;
+    }
+
+    @include lg {
+        width: max-content;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 'Poppins';
+        margin-left: 5px;
+        margin-right: 10px;
+        display: flex;
+    }
+
+    @include xl {
+        width: max-content;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 'Poppins';
+        margin-left: 5px;
+        margin-right: 10px;
+        display: flex;
+
+    }
+}
+
+a {
     text-decoration: none;
     font-family: 'Poppins'
 }

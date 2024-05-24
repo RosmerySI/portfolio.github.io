@@ -1,53 +1,123 @@
 @use '../../../styles/variables';
 @import '../../../styles/mixins';
 
-.sideBarShow {
-    position: fixed;
-    top: 9.5vh;
-    right: 0;
-    height: 82vh;
-    transition: width 0.5s ease;
-    width: 10vw;
-    background-color: variables.$dark;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    font-family: 'font-family: ' Poppins'';
+.sideBarHide{
+    display: none;
+    // position: fixed;
+    // top: 9.5vh;
+    // right: 0;
+    // height: 82vh;
+    // transition: width 0.5s ease;
+    // width: 5vw;
+    // background-color: variables.$dark;
+    // border-top-left-radius: 5px;
+    // border-bottom-left-radius: 5px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // color: white;
+    // font-family: 'font-family: ' Poppins'';
 
-    .projectList {
-        width: 3vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+    // @include sm {
+    //     position: fixed;
+    //     top: 9.5vh;
+    //     right: 0;
+    //     height: 82vh;
+    //     transition: width 0.5s ease;
+    //     width: 10vw;
+    //     background-color: variables.$dark;
+    //     border-top-left-radius: 5px;
+    //     border-bottom-left-radius: 5px;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     color: white;
+    //     font-family: 'font-family: ' Poppins'';
 
-        color: white;
-        font-family: 'Poppins';
-        padding: 0;
+    // }
 
-        li {
+    // @include md {
+    //     position: fixed;
+    //     top: 9.5vh;
+    //     right: 0;
+    //     height: 82vh;
+    //     transition: width 0.5s ease;
+    //     width: 7vw;
+    //     background-color: variables.$dark;
+    //     border-top-left-radius: 5px;
+    //     border-bottom-left-radius: 5px;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     color: white;
+    //     font-family: 'font-family: ' Poppins'';
+    // }
 
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 0 0 4.5vh 0;
+    // @include lg {
+    //     position: fixed;
+    //     top: 9.5vh;
+    //     right: 0;
+    //     height: 82vh;
+    //     transition: width 0.5s ease;
+    //     width: 10vw;
+    //     background-color: variables.$dark;
+    //     border-top-left-radius: 5px;
+    //     border-bottom-left-radius: 5px;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     color: white;
+    //     font-family: 'font-family: ' Poppins'';
+    // }
 
-            a {
-                color: white;
-                text-decoration: none;
-                display: flex;
-                align-items: center;
-            }
-        }
+    // @include xl {
+    //     position: fixed;
+    //     top: 9.5vh;
+    //     right: 0;
+    //     height: 82vh;
+    //     transition: width 0.5s ease;
+    //     width: 10vw;
+    //     background-color: variables.$dark;
+    //     border-top-left-radius: 5px;
+    //     border-bottom-left-radius: 5px;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     color: white;
+    //     font-family: 'font-family: ' Poppins'';
+    // }
 
-    }
+    // .projectList {
+    //     width: 3vw;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-evenly;
+
+    //     color: white;
+    //     font-family: 'Poppins';
+    //     padding: 0;
+
+    //     li {
+
+    //         display: flex;
+    //         flex-direction: row;
+    //         align-items: center;
+    //         padding: 0 0 4.5vh 0;
+
+    //         a {
+    //             color: white;
+    //             text-decoration: none;
+    //             display: flex;
+    //             align-items: center;
+    //         }
+    //     }
+
+    // }
 
 
 }
 
-.sideBarLess {
+.sideBarShow{
     position: fixed;
     top: 9.5vh;
     right: 0;
@@ -114,7 +184,7 @@
     }
 
     @include xl {
-        width: 3vw;
+        width: 5vw;
         display: flex;
         justify-content: center;
     }

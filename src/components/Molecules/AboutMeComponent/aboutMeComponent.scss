@@ -3,7 +3,7 @@
 
 .aboutMe {
     width:45vw;
-    height: 86vh;
+    height: 94vh;
     background-color: variables.$pink;
     display: flex;
     flex-direction: column;
@@ -11,30 +11,34 @@
     overflow: auto;
     @include sm {
         width: 45vw;
+        height: 93vh;
         
     }
     @include md {
         width: 50vw;
+        height: 94vh;
     }
         
     @include lg {
         width:35vw;
+        height: 93vh;
     }
         
     @include xl {
         width: 30vw;
+        height: 93vh;
        
     }
 }
 
 .pictureContainer {
     width: 35vw;
-    height:15vh;
+    height:20vh;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3%;
+    margin-top: 9vh;
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 5px;

@@ -31,16 +31,17 @@ h1 {
     height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 9vh;
+    overflow: auto;
 
     @include sm {
         width: 49vw;
         height: 84.5vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: top;
         align-items: center;
 
     }
@@ -50,7 +51,7 @@ h1 {
         height: 85vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: top;
         align-items: left;
         justify-content: top;
 
@@ -58,7 +59,7 @@ h1 {
 
     @include lg {
         width: 70vw;
-        height: 84vh;
+        height: 80vh;
         display: flex;
         flex-direction: column;
         justify-content: top;
@@ -68,7 +69,7 @@ h1 {
 
     @include xl {
         width: 70vw;
-        height: 84vh;
+        height: 80vh;
         display: flex;
         flex-direction: column;
         justify-content: top;
@@ -80,7 +81,7 @@ h1 {
 
 .pagesMain {
     width: 90vw;
-    height: 85vh;
+    height: 93vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +89,7 @@ h1 {
 
     @include sm {
         width: 97vw;
-        height: 85vh;
+        height: 93vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -97,7 +98,7 @@ h1 {
 
     @include md {
         width: 97vw;
-        height: 85vh;
+        height: 93vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -107,7 +108,7 @@ h1 {
 
     @include lg {
         width: 97vw;
-        height: 85vh;
+        height: 93vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -116,11 +117,12 @@ h1 {
 
     @include xl {
         width: 97vw;
-        height: 85vh;
+        height: 93vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
 
     }
 
@@ -134,20 +136,20 @@ h1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: .2vh;
+        margin-top: 9vh;
         margin-bottom: 1vh;
 
         @include sm {
             color: variables.$dark;
             font-family: 'Plus Jakarta Sans';
             background-color: variables.$pink;
-            width: 90.5vw;
+            width: 82vw;
             height: 10%;
             border-radius: 5px;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: .2vh;
+            margin-top: 9vh;
             margin-bottom: 1vh;
         }
 
@@ -155,13 +157,13 @@ h1 {
             color: variables.$dark;
             font-family: 'Plus Jakarta Sans';
             background-color: variables.$pink;
-            width: 90.5vw;
+            width: 81vw;
             height: 10%;
             border-radius: 5px;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: .2vh;
+            margin-top: 8vh;
             margin-bottom: 1vh;
 
         }
@@ -190,7 +192,7 @@ h1 {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: .2vh;
+            margin-top: 5vh;
             margin-bottom: 1vh;
 
         }
@@ -201,7 +203,7 @@ h1 {
 
 .projectPageMain {
     width: 85vw;
-    height: 71vh;
+    height:71vh;
     display: grid;
     grid-auto-flow: column;
     gap: 10px;
@@ -214,8 +216,8 @@ h1 {
     align-items: center;
 
     @include sm {
-        width: 90vw;
-        height: 71vh;
+        width: 80vw;
+        height: 70vh;
         display: grid;
         grid-auto-flow: column;
         gap: 10px;
@@ -229,7 +231,7 @@ h1 {
     }
 
     @include md {
-        width: 90vw;
+        width: 80vw;
         height: 71vh;
         display: grid;
         grid-auto-flow: column;
@@ -246,7 +248,7 @@ h1 {
 
     @include lg {
         width: 90vw;
-        height: 71vh;
+        height: 57vh;
         display: grid;
         grid-auto-flow: column;
         gap: 10px;
@@ -261,7 +263,7 @@ h1 {
 
     @include xl {
         width: 90vw;
-        height: 71vh;
+        height: 68vh;
         display: grid;
         grid-auto-flow: column;
         gap: 10px;
@@ -290,7 +292,7 @@ h1 {
     grid-auto-flow: row;
     
     @include sm {
-        grid-auto-flow: column;
+        grid-auto-flow: row;
 
     }
 

@@ -5,7 +5,7 @@ import './headerComponent.scss'
 
 export const HeaderComponent = () => {
 
-    const [menu, setMenu] = useState(false)
+    const [menu, setMenu] = useState(true)
 
     return (
         <header>

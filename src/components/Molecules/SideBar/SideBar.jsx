@@ -23,13 +23,12 @@ export const SideBar = ({ menu }) => {
 
   return (
     <>
-      <nav className={menu ? 'sideBarShow' : 'sideBarLess'}>
-        <h2>{menu ? 'Menu' : undefined}</h2>
+      <nav className={menu ? 'sideBarShow' : 'sideBarHide'}>    
         <ul className='projectList'>
           {
             projects.map((item, index) => {
               return <li key={index}>
-                <a href={item.href}><img src={item.src} alt="ícono del proyecto" />{menu ? item.text : undefined}</a>
+                <a href={item.href}><img src={item.src} alt="ícono del proyecto" /></a>
               </li>
             })
           }          

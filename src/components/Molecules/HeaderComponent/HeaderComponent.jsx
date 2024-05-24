@@ -9,7 +9,7 @@ export const HeaderComponent = () => {
 
     return (
         <header>
-            <h1>Rosmery Salazar Irarragorri</h1>
+            <h1>Rosmery Salazar </h1>
             <img
                 id='menuIcon'
                 src={menuIncon}

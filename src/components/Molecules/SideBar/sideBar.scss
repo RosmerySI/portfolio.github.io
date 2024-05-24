@@ -1,4 +1,5 @@
 @use '../../../styles/variables';
+@import '../../../styles/mixins';
 
 .sideBarShow {
     position: fixed;
@@ -14,26 +15,25 @@
     flex-direction: column;
     align-items: center;
     color: white;
-    font-family: 'font-family: 'Poppins'';
+    font-family: 'font-family: ' Poppins'';
+
     .projectList {
         width: 3vw;
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         justify-content: space-evenly;
-  
+
         color: white;
         font-family: 'Poppins';
         padding: 0;
-        
-    
-    
+
         li {
-            
+
             display: flex;
-            flex-direction: row;        
+            flex-direction: row;
             align-items: center;
             padding: 0 0 4.5vh 0;
-    
+
             a {
                 color: white;
                 text-decoration: none;
@@ -41,8 +41,9 @@
                 align-items: center;
             }
         }
-    
+
     }
+
 
 }
 
@@ -52,34 +53,37 @@
     right: 0;
     height: 82vh;
     transition: width 0.5s ease;
-    width: 3vw;
+    width: 10vw;
     background-color: variables.$dark;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     align-self: center;
     justify-self: center;
     text-align: center;
+    display: flex;
+    justify-content: center;
     color: white;
     font-family: 'Poppins';
+
     .projectList {
         width: 3.5vw;
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         color: white;
         font-family: 'Poppins';
         padding: 0;
-        
-    
-    
+
+
+
         li {
-            
+
             display: flex;
-            flex-direction: row;        
+            flex-direction: row;
             align-items: center;
             padding: 0 0 6vh 0;
-    
+
             a {
                 color: white;
                 text-decoration: none;
@@ -87,7 +91,32 @@
                 align-items: center;
             }
         }
-    
+
+    }
+
+    @include sm {
+        width: 7vw;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    @include md {
+        width: 5vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    @include lg {
+        width: 5vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    @include xl {
+        width: 3vw;
+        display: flex;
+        justify-content: center;
     }
 
 }

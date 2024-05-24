@@ -1,7 +1,9 @@
 @use '../../../styles/variables';
+@import '../../../styles/mixins.scss';
+
 
 section{
-    width: 20vw;
+    width:35vw;
     height: max-content;
     display: flex;
     flex-direction: column;
@@ -10,7 +12,22 @@ section{
     color: variables.$dark;
     font-size: 14px;
  
-    
+    @include sm {
+        width: 30vw;
+        height: 20vh;
+    }
+    @include md {
+        width: 25vw;
+        height: 20vh;
+    }
+    @include lg {
+        width: 20vw;
+        height: 25vh;
+    }
+    @include xl {
+        width:20vw;
+        height: 30vh;
+    }
 }
 h3{
    margin: 0;

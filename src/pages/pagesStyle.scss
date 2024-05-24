@@ -1,4 +1,6 @@
 @use '../styles/variables';
+@import '../styles/mixins.scss';
+
 
 header {
     width: 100vw;
@@ -19,48 +21,187 @@ h1 {
 
 
 .pageContainer {
+    width: 100vw;
     display: flex;
     flex-direction: row;
 }
 
 .main {
-    width: 70vw;
-    height: 84vh;
+    width: 46vw;
+    height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 1vw;
+    margin-top: 5px;
+
+    @include sm {
+        width: 49vw;
+        height: 84.5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    @include md {
+        width: 65vw;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        justify-content: top;
+
+    }
+
+    @include lg {
+        width: 70vw;
+        height: 84vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
+
+    }
+
+    @include xl {
+        width: 70vw;
+        height: 84vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
+
+    }
 
 }
 
 .pagesMain {
-    width: 97vw;
-    height: 84vh;
+    width: 90vw;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include sm {
+        width: 97vw;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include md {
+        width: 97vw;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    @include lg {
+        width: 97vw;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include xl {
+        width: 97vw;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
     h2 {
         color: variables.$dark;
         font-family: 'Plus Jakarta Sans';
         background-color: variables.$pink;
-        width: 90.5vw;
-        height: 10%;        
+        width: 86vw;
+        height: 10%;
         border-radius: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: .2vh;
         margin-bottom: 1vh;
-        
+
+        @include sm {
+            color: variables.$dark;
+            font-family: 'Plus Jakarta Sans';
+            background-color: variables.$pink;
+            width: 90.5vw;
+            height: 10%;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: .2vh;
+            margin-bottom: 1vh;
+        }
+
+        @include md {
+            color: variables.$dark;
+            font-family: 'Plus Jakarta Sans';
+            background-color: variables.$pink;
+            width: 90.5vw;
+            height: 10%;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: .2vh;
+            margin-bottom: 1vh;
+
+        }
+
+        @include lg {
+            color: variables.$dark;
+            font-family: 'Plus Jakarta Sans';
+            background-color: variables.$pink;
+            width: 90.5vw;
+            height: 10%;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: .2vh;
+            margin-bottom: 1vh;
+        }
+
+        @include xl {
+            color: variables.$dark;
+            font-family: 'Plus Jakarta Sans';
+            background-color: variables.$pink;
+            width: 90.5vw;
+            height: 10%;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: .2vh;
+            margin-bottom: 1vh;
+
+        }
+
     }
 
 }
 
 .projectPageMain {
-    width: 90vw;
-    height:71vh;
+    width: 85vw;
+    height: 71vh;
     display: grid;
     grid-auto-flow: column;
     gap: 10px;
@@ -71,24 +212,110 @@ h1 {
     overflow: auto;
     justify-items: center;
     align-items: center;
-    
-    section{
+
+    @include sm {
+        width: 90vw;
+        height: 71vh;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 10px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: variables.$pink;
+        border-radius: 5px;
+        overflow: auto;
+        justify-items: center;
+        align-items: center;
+    }
+
+    @include md {
+        width: 90vw;
+        height: 71vh;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 10px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: variables.$pink;
+        border-radius: 5px;
+        overflow: auto;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    @include lg {
+        width: 90vw;
+        height: 71vh;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 10px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: variables.$pink;
+        border-radius: 5px;
+        overflow: auto;
+        justify-items: center;
+        align-items: center;
+    }
+
+    @include xl {
+        width: 90vw;
+        height: 71vh;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 10px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: variables.$pink;
+        border-radius: 5px;
+        overflow: auto;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+
+    section {
         margin: 0;
     }
-    
+
 }
 
 
 
 
 .fewItems {
-  
-    grid-auto-flow: column;
+
+    grid-auto-flow: row;
+    
+    @include sm {
+        grid-auto-flow: column;
+
+    }
+
+    @include md {
+        grid-auto-flow: row;
+
+
+    }
+
+    @include lg {
+        grid-auto-flow: column;
+
+    }
+
+    @include xl {
+        grid-auto-flow: column;
+
+
+    }
+
     .gridItem {
         width: 99%;
         height: 70%;
         margin: 0;
-       
+
         img {
             border-radius: 10px;
             border-style: solid;
@@ -97,18 +324,19 @@ h1 {
             max-width: 100%;
             height: 100%;
         }
-        
+
     }
 }
 
 .multiItems {
-    
+
     grid-auto-flow: row;
+
     .gridItem {
         width: 80%;
         height: 90%;
         margin: 0;
-    
+
         img {
             border-radius: 10px;
             border-style: solid;
@@ -117,6 +345,6 @@ h1 {
             max-width: 100%;
             height: 100%;
         }
-        
+
     }
 }
